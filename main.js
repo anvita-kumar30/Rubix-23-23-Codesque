@@ -1,10 +1,10 @@
 (function ($) {
     "use strict";
 
-    // Initiate the wowjs
+    
     new WOW().init();
 
-    // Sticky Navbar
+   
     $(window).scroll(function () {
         if ($(this).scrollTop() > 40) {
             $('.navbar').addClass('sticky-top');
@@ -13,7 +13,7 @@
         }
     });
     
-    // Dropdown on mouse hover
+    
     $(document).ready(function () {
         function toggleNavbarMethod() {
             if ($(window).width() > 992) {
@@ -31,7 +31,7 @@
     });
     
     
-    // Back to top button
+    
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn('slow');
@@ -45,7 +45,6 @@
     });
 
 
-    // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1500,
@@ -70,4 +69,3 @@
     });
     
 })(jQuery);
-
